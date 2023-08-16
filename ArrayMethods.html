@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let numbers = [1, 2, 3];
+
+            after=numbers.push(4);
+            console.log(after); // [1, 2, 3, 4]
+
+            let popped = numbers.pop();
+            console.log(numbers); // [1, 2, 3]
+            console.log(popped);  // 4
+
+            numbers.unshift(0);
+            console.log(numbers); // [0, 1, 2, 3]
+
+            let shifted = numbers.shift();
+            console.log(numbers); // [1, 2, 3]
+            console.log(shifted);  // 0
+
+    </script>
+</body>
+</html>

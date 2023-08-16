@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to swap two numbers without using a third variable
+function swapNumbers(a, b) {
+  console.log("Before swapping:");
+  console.log("a =", a);
+  console.log("b =", b);
+
+  // Swapping logic
+  a = a + b;
+  b = a - b;
+  a = a - b;
+
+  console.log("After swapping:");
+  console.log("a =", a);
+  console.log("b =", b);
+}
+
+swapNumbers(20,70);
+
+    </script>
+</body>
+</html>

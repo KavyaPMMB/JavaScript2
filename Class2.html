@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class main
+        {
+            constructor(arg)
+            {
+                document.write("Constructor <br>"+arg)
+            }
+            test()
+            {
+                var a="hello"
+              document.write(a +"test function")  
+            }
+        }
+        class sub extends main
+        {
+            constructor()
+            {
+                document.write("hiii")
+            }
+            subfun()
+            {
+                document.write("subfun invoked <br>")
+            }
+        }
+        var obj2=new sub("asdfgh");
+        obj2.subfun()
+        obj2.test();
+        // var obj=new main("hiiii");
+        // obj.test();
+    </script>
+</body>
+</html>

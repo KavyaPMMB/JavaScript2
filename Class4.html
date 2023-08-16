@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class main
+        {
+            // constructor(arg2)
+            // {
+            //     document.write("constructor invoked " + arg2 +"<br>")
+            // }
+
+            test()
+            {
+                document.write("test() invoked <br>")
+            }
+        }
+        class child
+        {
+            test()
+            {
+                document.write("test2() invoked ")
+            }
+        }
+
+var ob=new child();
+var ob2=new main();
+ob2.test();
+ob.test();
+
+    </script>
+</body>
+</html>

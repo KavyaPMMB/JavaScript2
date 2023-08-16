@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class main
+        {
+            constructor(para1)
+            {
+              document.write("constructor is invoked automatically "+para1 +"<br>")  
+            }
+            test(arg)
+            {
+                document.write("test() invoked " + arg)
+            }
+        }
+        var ob=new main("constructor parameter");
+        ob.test("argument");
+    </script>
+</body>
+</html>

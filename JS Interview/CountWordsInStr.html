@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to count the total number of words in a string
+function countWords(str) {
+  var count = 0;
+  var words = str.split(" ");
+
+  // Iterate through each word in the array
+  for (var i = 0; i < words.length; i++) {
+    // Check if the current word is not an empty string
+    if (words[i] !== "") {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+// Test the function with a sample string
+var string = "Hello, World! How are you?";
+var count = countWords(string);
+console.log("The total number of words in the string is: " + count);
+
+    </script>
+</body>
+</html>

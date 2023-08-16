@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// function printLeftHalfPyramid(rows) {
+//   for (let i = 1; i <= rows; i++) {
+//     let pattern = ' ';
+//     for (let j = 1; j <= rows; j++) {
+//       if (j <= rows - i) {
+//         pattern += '  ';
+//       } else {
+//         pattern += '* ';
+//       }
+//     }
+//     console.log(pattern);
+    
+//   }
+// }
+
+// printLeftHalfPyramid(5);
+
+
+
+
+
+// Set the number of rows for the pyramid
+var rows = 5;
+
+// Iterate through each row
+for (var i = 1; i <= rows; i++) {
+  // Print asterisks based on the current row number
+  for (var j = 1; j <= i; j++) {
+    document.write('* ');
+  }
+  document.write('<br>');
+}
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to print the Fibonacci series up to a given number of terms
+function printFibonacciSeries(numTerms) {
+  var term1 = 0;
+  var term2 = 1;
+
+  // Print the first two terms of the series
+  console.log(term1);
+  console.log(term2);
+
+  // Calculate and print the subsequent terms
+  for (var i = 3; i <= numTerms; i++) {
+    var nextTerm = term1 + term2;
+    console.log(nextTerm);
+
+    // Update the values of term1 and term2 for the next iteration
+    term1 = term2;
+    term2 = nextTerm;
+  }
+}
+
+// Test the function with a number of terms
+var numTerms = 10;
+console.log("Fibonacci series up to " + numTerms + " terms:");
+printFibonacciSeries(numTerms);
+
+    </script>
+    
+</body>
+</html>

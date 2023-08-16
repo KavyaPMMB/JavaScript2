@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class main
+        {
+            constructor(arg)
+            {
+                document.write("Constructor invoked " + arg +"<br>")
+            }
+            test()
+            {
+                var testvar="helloo"
+                document.write(testvar+"Test function invoked")
+            }
+        }
+        var ob=new main("hii");
+        ob.test()
+        // class sub extends main
+        // {
+        //     subfunction()
+        //     {
+        //         document.write("Subclass function invoked")
+        //     }
+        // }
+        // var obj=new main("automatically");
+        // obj.test();
+        // var obj2=new sub("automatically");
+        // obj2.test()
+        // obj2.subfunction();
+
+    </script>
+</body>
+</html>

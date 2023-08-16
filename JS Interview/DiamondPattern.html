@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printDiamond(rows) {
+  for (let i = 1; i <= rows; i++) {
+    let pattern = '';
+    for (let j = 1; j <= rows - i; j++) {
+      pattern += ' ';
+    }
+    for (let k = 1; k <= 2 * i - 1; k++) {
+      pattern += '*';
+    }
+    console.log(pattern);
+  }
+  for (let i = rows - 1; i >= 1; i--) {
+    let pattern = '';
+    for (let j = 1; j <= rows - i; j++) {
+      pattern += ' ';
+    }
+    for (let k = 1; k <= 2 * i - 1; k++) {
+      pattern += '*';
+    }
+    console.log(pattern);
+  }
+}
+
+printDiamond(5);
+
+    </script>
+</body>
+</html>

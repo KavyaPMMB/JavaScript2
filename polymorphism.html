@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class parent{
+            fun()
+            {
+                document.write("parentfun() invoked <br>")
+            }
+           
+        }
+        class child
+        {
+            fun()
+            {
+                document.write("childfun() invoked")
+            }
+        }
+        var ob=new child();
+        var ob2=new parent();
+        ob2.fun();
+        ob.fun();
+
+    </script>
+</body>
+</html>

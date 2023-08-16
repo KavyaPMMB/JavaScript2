@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Assume each function is asynchronous and returns a promise.
+
+// Function asyncFunction1
+function asyncFunction1() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('Result 1');
+    }, 1000);
+  });
+}
+
+// Function asyncFunction2
+function asyncFunction2(arg) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(`${arg} + Result 2`);
+    }, 1500);
+  });
+}
+
+// Function asyncFunction3
+function asyncFunction3(arg) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(`${arg} + Result 3`);
+    }, 2000);
+  });
+}
+
+// Function asyncFunction4
+function asyncFunction4(arg) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(`${arg} + Result 4`);
+    }, 2500);
+  });
+}
+
+// Async function using async/await to call each async function sequentially
+async function asyncFunctionChain() {
+  try {
+    const result1 = await asyncFunction1();
+    console.log(result1); // Output: "Result 1"
+
+    const result2 = await asyncFunction2(result1);
+    console.log(result2); // Output: "Result 1 + Result 2"
+
+    const result3 = await asyncFunction3(result2);
+    console.log(result3); // Output: "Result 1 + Result 2 + Result 3"
+
+    const result4 = await asyncFunction4(result3);
+    console.log(result4); // Output: "Result 1 + Result 2 + Result 3 + Result 4"
+
+    // And so on...
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+// Calling the async function
+asyncFunctionChain();
+
+    </script>
+</body>
+</html>
